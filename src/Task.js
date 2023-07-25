@@ -11,9 +11,9 @@ const Task = ({ taskObj, onComplete }) => {
   });
 
   return (
-    <div className="task">
-      <h3>{taskObj.title}</h3>
-      <div className="deadline">
+    <div className=" p-6 bg-white rounded leading-6 mt-4 shadow-md ">
+      <h3 className="text-lg text-[#c8781a]">{taskObj.title}</h3>
+      <div className="text-xs pt-1 ">
         son teslim:{" "}
         <span className={diffInDays <= 3 ? "bg-kirmizi" : "sakin"}>
           {distanceToNow}
@@ -22,13 +22,18 @@ const Task = ({ taskObj, onComplete }) => {
       <p>{taskObj.description}</p>
       <div>
         {taskObj.people.map((p) => (
-          <span className="pill" key={p}>
+          <span className=" pill  " key={p}>
             {p}
           </span>
         ))}
       </div>
       {onComplete && (
-        <button onClick={() => onComplete(taskObj.id)}>Tamamlandı</button>
+        <button
+          className="block py-2 px-3 ml-auto bg-[#fecc91] shadow-md rounded border-0 cursor-pointer "
+          onClick={() => onComplete(taskObj.id)}
+        >
+          Tamamlandı
+        </button>
       )}
     </div>
   );
