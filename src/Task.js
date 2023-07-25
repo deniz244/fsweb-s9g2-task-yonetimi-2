@@ -22,7 +22,7 @@ const Task = ({ taskObj, onComplete }) => {
       <p>{taskObj.description}</p>
       <div>
         {taskObj.people.map((p) => (
-          <span className=" pill  " key={p}>
+          <span className="pill" key={p}>
             {p}
           </span>
         ))}

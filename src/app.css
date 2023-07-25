@@ -66,14 +66,14 @@
 }*/
 
 .pill {
-  /*display: inline-block;
+  display: inline-block;
   padding: 5px 12px;
   font-size: 14px;
   border: 1px solid #ccc;
   margin-right: 4px;
   margin-bottom: 6px;
-  border-radius: 30px;*/
-  @apply inline-block py-1 px-3 text-sm border border-[#ccc]  mr-1 mb-1.5 rounded-full;
+  border-radius: 30px;
+  /*@apply inline-block py-1 px-3 text-sm border border-[#ccc]  mr-1 mb-1.5 rounded-full;*/
 }
 
 .deadline {
